@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('carBrand/create', 'CarBrandController@create');
 Route::put('carBrand/update', 'CarBrandController@update');
-Route::get('carBrand/list', 'CarBrandController@list');
+Route::get('carBrand/list', 'CarBrandController@get');
 Route::delete('carBrand/delete', 'CarBrandController@delete');

@@ -60,4 +60,10 @@ class CarBrandController extends Controller
             return Response($exception, 403);
         }
     }
+
+    public function carBrands()
+    {
+        $datas = CarBrand::with("models")->get();
+        return view('carbrand.list', $datas);
+    }
 }
